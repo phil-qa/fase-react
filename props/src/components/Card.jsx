@@ -1,6 +1,6 @@
 import "../styles/card.css";
 
-const Card = ({ name, age, role }) => {
+const Card = ({ name, age, role, isVerified }) => {
   return (
     <div className="card">
       <img
@@ -9,7 +9,10 @@ const Card = ({ name, age, role }) => {
         width="100px"
       />
       <div className="card-content">
-        <h1>This entry was from {name}</h1>
+        <h1>
+          {name}
+          {isVerified && "🏵"}
+        </h1>
         <div className="card-details">
           <h2>Age : {age}</h2>
           <h2>Role : {role}</h2>
