@@ -83,3 +83,5 @@ The site is responsive
 - Create components
 - Create pages
 - test the basic construct works as coponents
+
+- move the product to a component
