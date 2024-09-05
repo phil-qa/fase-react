@@ -85,3 +85,5 @@ The site is responsive
 - test the basic construct works as coponents
 
 - move the product to a component
+  - Setup the product component to take the prop values for price name and url
+  - implement the product in the shop as a single unit passing the testdata
