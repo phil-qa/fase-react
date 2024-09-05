@@ -90,3 +90,8 @@ The site is responsive
   - implement the product in the shop as a single unit passing the testdata
 
 - Create multiple objects from the sourcedata with a callback function
+
+- Implement routing from navbar to call each page.
+  - Setup BrowserRouter Routes Route (Alias BrowserRouter as Router)
+    -configure routes in the app.jsx to pages targets
+    -configure Header Nav to take the routes for all pages
