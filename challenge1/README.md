@@ -103,6 +103,9 @@ The site is responsive
 
 - Set styling for Header
 
+- Set Styling for the products.
+  - implement responsive grid on the products for the sizes that could be used.
+
 | Class                | Description                                                                         |
 | -------------------- | ----------------------------------------------------------------------------------- |
 | `container-fluid`    | Creates a full-width container, spanning the entire width of the viewport           |
