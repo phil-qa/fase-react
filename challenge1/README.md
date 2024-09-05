@@ -98,7 +98,10 @@ The site is responsive
     -configure Header Nav to take the routes for all pages
 
 - Set Styling for home page
+
   - import bootstrap using npm install bootstrap
+
+- Set styling for Header
 
 | Class                | Description                                                                         |
 | -------------------- | ----------------------------------------------------------------------------------- |
