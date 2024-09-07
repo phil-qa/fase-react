@@ -82,3 +82,13 @@ At this stage, there’s no need to store the cart data - simply change the appe
 update the shop page to change the button states
 
 **_Note_** Be aware of ensuring that state is a single point of truth for the outcome rather than using several state objects for multiple responses in the page. state is run asynchronously.
+
+# Implement the remote data get
+
+The task is to ge the page to load from a remote source. The remote json is
+https://seed-theory-api.netlify.app/data.json
+
+- Create useState to manage the state of the fetched data, loading status, and any errors
+  - Note that we are dealing with a remote resource that needs to be managed as such
+- create useEffect and fetch to get the data should only run once
+- create fetch to handle the request
