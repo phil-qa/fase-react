@@ -3,13 +3,15 @@ import "./App.css";
 import { useState } from "react";
 import AddConfetti from "./components/AddConfetti";
 
-function App() {
+function App()
+{
   const [isConfettiEnabled, setIsConfettiEnabled] = useState(true);
   const [count, setCount] = useState(0);
 
-  useEffect(() => {
+  useEffect(() =>
+  {
     AddConfetti({ text: count.toString() });
-  }, [count]);
+  });
 
   return (
     <main>

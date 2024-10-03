@@ -1,0 +1,45 @@
+{
+    "faqItems": [
+        {
+            "id": 1,
+            "question": "What is React?",
+            "answer": "React is a JavaScript library for building user interfaces.",
+            "references": [
+                {
+                    "type": "external",
+                    "url": "https://reactjs.org/",
+                    "label": "React Official Website"
+                },
+                {
+                    "type": "local",
+                    "url": "/docs/react-intro.html",
+                    "label": "Introduction to React"
+                }
+            ]
+        },
+        {
+            "id": 2,
+            "question": "How do I install React?",
+            "answer": "You can create a new React app using Create React App or add React to an existing project.",
+            "references": [
+                {
+                    "type": "external",
+                    "url": "https://create-react-app.dev/",
+                    "label": "Create React App"
+                }
+            ]
+        },
+        {
+            "id": 3,
+            "question": "What are React Hooks?",
+            "answer": "Hooks are functions that let you use state and other React features without writing a class.",
+            "references": [
+                {
+                    "type": "local",
+                    "url": "/docs/hooks-overview.html",
+                    "label": "Hooks Overview"
+                }
+            ]
+        }
+    ]
+}

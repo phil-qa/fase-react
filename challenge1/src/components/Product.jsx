@@ -1,16 +1,18 @@
 import React, { useState } from "react";
 
-const Product = ({ name, price, imageUrl }) => {
+const Product = ({ name, price, imageUrl }) =>
+{
   const [addToCart, setAddToCart] = useState(false);
 
-  const handleAddClick = () => {
+  const handleAddClick = () =>
+  {
     setAddToCart((prevState) => !prevState);
   };
 
   return (
     <div className="card h-100">
       <img src={imageUrl} alt={name} className="card-img-top" />
-      <div className="card-body d-flex flex-column">
+      <div className="card-body d-flex flex-column justify-content-center align-items-center text-center">
         <h4 className="card-title">{name}</h4>
         <p className="card-text">£ {price}</p>
         <button
