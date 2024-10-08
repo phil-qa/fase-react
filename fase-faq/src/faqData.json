@@ -1,0 +1,249 @@
+{
+    "faqItems": [
+        {
+            "id": 1,
+            "question": "Arrays and objects are difficult structures, how do I create them and iterate through them",
+            "answer": [
+                {
+                    "section": "Arrays are a fundamental structure of computing they are blocks of memory that contain something."
+                },
+                {
+                    "section": "As a structure, most computing languages support it because they are fundamental. An object in compute is a thing, that contains information and functionality."
+                },
+                {
+                    "section": "Almost everything in a development language is an object of some type. "
+                }
+            ],
+            "references": [
+                {
+                    "type": "local",
+                    "url": "/Arrays.html",
+                    "label": "What are arrays"
+                },
+                {
+                    "type": "local",
+                    "url": "/UnderstandingObjects.html",
+                    "label": "What are objects"
+                }
+            ]
+        },
+        {
+            "id": 2,
+            "question": "When using websites how are sessions maintained?",
+            "answer": [
+                {
+                    "section": "Sessions are maintained using multiple methods, cookies,sessionIds, parameters, local storage, to name a few"
+                }
+            ],
+            "references": [
+                {
+                    "type": "internal",
+                    "url": "/WebSessions.html",
+                    "label": "About web sessions"
+                }
+            ]
+        },
+        {
+            "id": 3,
+            "question": "How do I connect to, and query a database?",
+            "answer": [
+                {
+                    "section": "Both connecting to a database and querying it are largely dependent on the database you are working to."
+                },
+                {
+                    "section": "So the subject is large, it is recommended that you look to the documentation for the brand you are working to, as well as the language you are working from"
+                },
+                {
+                    "section": "However, there are some common areas worth looking at. Check the reference"
+                }
+            ],
+            "references": [
+                {
+                    "type": "internal",
+                    "url": "/Database.html",
+                    "label": "Basic patterns for database"
+                },
+                {
+                    "type": "external",
+                    "url": "https://www.mongodb.com/developer/languages/javascript/node-connect-mongodb//",
+                    "label": "Mongo DB and React"
+                }
+            ]
+        },
+        {
+            "id": 4,
+            "question": "What is the full build process for a react app.",
+            "answer": [
+                {
+                    "section": "A react application in isolation (not regarding back end) follows a common design -> implementation process"
+                },
+                {
+                    "section": "It starts with figuring out what the requirement is and then considering how a user will consume the requirement. UX is a useful thing to be aware of for that. Following on from this its a matter of designing against the criteria, testing, deploying and maintenance."
+                },
+                {
+                    "section": "It is worth noting that the support page is only a start point, it's always a good idea to go to the documentation for whichever framework or library you are using to see what they say about it."
+                }
+            ],
+            "references": [
+                {
+                    "type": "internal",
+                    "url": "/ReactDevelopment.html",
+                    "label": "Details on developing a react app"
+                }
+            ]
+        },
+        {
+            "id": 5,
+            "question": "How do Promises work",
+            "answer": [
+                {
+                    "section": "The Promise object represents the eventual completion (or failure) of an asynchronous operation and its resulting value"
+                },
+                {
+                    "section": "A Promise is a proxy for a value not necessarily known when the promise is created."
+                },
+                {
+                    "section": "A JavaScript Promise object can be: Pending, Fulfilled, Rejected"
+                },
+                {
+                    "section": "The Promise object supports two properties: state and result."
+                }
+            ],
+            "references": [
+                {
+                    "type": "internal",
+                    "url": "/JavascriptPromise.html",
+                    "label": "Detail on promises"
+                },
+                {
+                    "type": "external",
+                    "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise/",
+                    "label": "Documentation from mdn"
+                }
+            ]
+        },
+        {
+            "id": 6,
+            "question": "What is MVC",
+            "answer": [
+                {
+                    "section": "MVC - Model-View-Controller is an architectural concept otherwise known as a software design pattern"
+                },
+                {
+                    "section": "The Model serves as the foundation of the application and is responsible for the business logic and data updates."
+                },
+                {
+                    "section": "The View (where React lives) is the user interface to the model and the user interaction to it."
+                },
+                {
+                    "section": "The Controller has the responsibility for managint the application flow, user input handling and orchestration of business logic."
+                }
+            ],
+            "references": [
+                {
+                    "type": "internal",
+                    "url": "/MVC.html",
+                    "label": "React and MVC"
+                },
+                {
+                    "type": "external",
+                    "url": "https://dev.to/dr_anks/demystifying-model-view-controller-mvc-architecture-the-heart-of-software-design-5glg",
+                    "label": "Demystifying the MVC software model"
+                }
+            ]
+        },
+        {
+            "id": 7,
+            "question": "Why use class vs ID in css",
+            "answer": [
+                {
+                    "section": "If you think about what each of those attributes stand for then you should get the idea of why."
+                },
+                {
+                    "section": "A Class is a set of things that are 'the same thing conceptually' for example, a set of div elements that are responsible for holding a particular list of data (news article) could have a class of news-article, this means that all news articles added are styled in the same way"
+                },
+                {
+                    "section": "An id is a specific thing, thats why we state that id should be unique, in this way we can access the element by id directly without 'walking the DOM' to get to it."
+                }
+            ],
+            "references": []
+        },
+        {
+            "id": 8,
+            "question": "What is flexbox and why use it in comparison to grid",
+            "answer": [
+                {
+                    "section": "Flexbox tends to be an axis based positional tool, i.e it works in either the x or y dimensions "
+                },
+                {
+                    "section": "Grid is a more specific control object where exact positioning is needed, it is the case that the flexbox and grid can be used together based on requirements."
+                },
+                {
+                    "section": "It is possible to implement flex in a grid-way but there are restrictions to that."
+                }
+            ],
+            "references": [
+                {
+                    "type": "internal",
+                    "url": "/FlexboxAndGrid.html",
+                    "label": "Comparison of flexbox and grid"
+                },
+                {
+                    "type": "external",
+                    "url": "https://css-tricks.com/snippets/css/a-guide-to-flexbox/",
+                    "label": "Flexbox information"
+                },
+                {
+                    "type": "external",
+                    "url": "https://css-tricks.com/snippets/css/complete-guide-grid/",
+                    "label": "Grid layout information"
+                }
+            ]
+        },
+        {
+            "id": 9,
+            "question": "How do I use gitlab",
+            "answer": [
+                {
+                    "section": "I would default to 'Read the documentation' on this because this is what is expected of you as a development team, however the links has a overview document."
+                },
+                {
+                    "section": "As well as a link to the documentation!"
+                }
+            ],
+            "references": [
+                {
+                    "type": "internal",
+                    "url": "/GitLab.html",
+                    "label": "Brief summary of GitLab"
+                },
+                {
+                    "type": "external",
+                    "url": "https://docs.gitlab.com/",
+                    "label": "Official documentation"
+                }
+            ]
+        },
+        {
+            "id": 10,
+            "question": "How do I do unit testing in React",
+            "answer": [
+                {
+                    "section": "GREAT QUESTION, that nobody actually asked. Consider implementing it though, support page is linked"
+                }
+            ],
+            "references": [
+                {
+                    "type": "internal",
+                    "url": "/UnitTestingInReact.html",
+                    "label": "Summary or unit testing in react"
+                },
+                {
+                    "type": "external",
+                    "url": "https://www.freecodecamp.org/news/how-to-write-unit-tests-in-react/",
+                    "label": "How to Write unit tests in react."
+                }
+            ]
+        }
+    ]
+}

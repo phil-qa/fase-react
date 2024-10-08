@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>How to Use GitLab</title>
+    <link rel="stylesheet" href="answer.css">
+</head>
+
+<body>
+    <h1>How to Use GitLab</h1>
+
+    <h2>What is GitLab?</h2>
+    <p>GitLab is a web-based DevOps lifecycle tool that provides a Git repository manager providing wiki, issue-tracking
+        and CI/CD pipeline features, using an open-source license, developed by GitLab Inc.</p>
+
+    <h2>Getting Started with GitLab</h2>
+    <ol>
+        <li><strong>Create an Account:</strong> Sign up at <a href="https://gitlab.com">gitlab.com</a> or your
+            organization's GitLab instance.</li>
+        <li><strong>Set Up SSH Keys:</strong> For secure communication between your local machine and GitLab.</li>
+        <li><strong>Create or Join a Project:</strong> Start a new repository or collaborate on an existing one.</li>
+    </ol>
+
+    <h2>Basic GitLab Workflow</h2>
+
+    <h3>1. Clone a Repository</h3>
+    <div class="example">
+        <pre><code>git clone git@gitlab.com:username/repository.git
+cd repository</code></pre>
+    </div>
+
+    <h3>2. Create a New Branch</h3>
+    <div class="example">
+        <pre><code>git checkout -b feature-branch</code></pre>
+    </div>
+
+    <h3>3. Make Changes and Commit</h3>
+    <div class="example">
+        <pre><code>git add .
+git commit -m "Add new feature"</code></pre>
+    </div>
+
+    <h3>4. Push Changes to GitLab</h3>
+    <div class="example">
+        <pre><code>git push origin feature-branch</code></pre>
+    </div>
+
+    <h3>5. Create a Merge Request</h3>
+    <p>Go to the GitLab web interface, navigate to your project, and click on "Merge Requests" > "New Merge Request".
+        Select your branch as the source and the main branch as the target.</p>
+
+    <h2>Key GitLab Features</h2>
+
+    <h3>Issue Tracking</h3>
+    <ul>
+        <li>Create issues to track tasks, enhancements, and bugs</li>
+        <li>Assign issues to team members</li>
+        <li>Use labels and milestones for organization</li>
+    </ul>
+
+    <h3>CI/CD Pipelines</h3>
+    <p>GitLab provides built-in Continuous Integration/Continuous Deployment capabilities.</p>
+    <div class="example">
+        <p>Example .gitlab-ci.yml file:</p>
+        <pre><code>stages:
+  - build
+  - test
+  - deploy
+
+build-job:
+  stage: build
+  script:
+    - echo "Building the app"
+    - mkdir build
+    - touch build/info.txt
+
+test-job:
+  stage: test
+  script:
+    - echo "Running tests"
+    - test -f build/info.txt
+
+deploy-job:
+  stage: deploy
+  script:
+    - echo "Deploying the app"
+  only:
+    - main</code></pre>
+    </div>
+
+    <h3>Wiki</h3>
+    <p>Each project in GitLab comes with a Wiki to document your project. You can create and edit pages directly in the
+        GitLab interface.</p>
+
+    <h3>Snippets</h3>
+    <p>Store and share pieces of code or other text.</p>
+
+    <h2>Advanced GitLab Usage</h2>
+
+    <h3>Code Review</h3>
+    <ul>
+        <li>Use merge requests for code review</li>
+        <li>Leave comments on specific lines of code</li>
+        <li>Use approval rules to ensure quality checks</li>
+    </ul>
+
+    <h3>GitLab CI/CD</h3>
+    <ul>
+        <li>Set up runners to execute your CI/CD jobs</li>
+        <li>Use environment variables for sensitive information</li>
+        <li>Deploy to multiple environments (staging, production)</li>
+    </ul>
+
+    <h3>GitLab Container Registry</h3>
+    <p>Store and manage Docker images within GitLab.</p>
+
+    <h3>GitLab Pages</h3>
+    <p>Host static websites directly from your GitLab repository.</p>
+
+    <h2>Best Practices</h2>
+    <ul>
+        <li>Use meaningful commit messages</li>
+        <li>Keep merge requests small and focused</li>
+        <li>Use GitLab's integrated code quality tools</li>
+        <li>Regularly update your local repository</li>
+        <li>Use GitLab's project templates for quick starts</li>
+    </ul>
+
+    <h2>Conclusion</h2>
+    <p>GitLab offers a comprehensive suite of tools for the entire DevOps lifecycle. By leveraging its features for
+        version control, issue tracking, CI/CD, and more, teams can streamline their development process and improve
+        collaboration. As you become more familiar with GitLab, explore its advanced features to further enhance your
+        workflow and project management capabilities.</p>
+</body>
+
+</html>
