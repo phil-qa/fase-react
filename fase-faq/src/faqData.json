@@ -244,6 +244,27 @@
                     "label": "How to Write unit tests in react."
                 }
             ]
+        },
+        {
+            "id": 11,
+            "question": "How do I do implement Typescript in react",
+            "answer": [
+                {
+                    "section": "Typescript in React is easily implemented, ideally when the projecgt is first created. We apply a creation template to the process."
+                }
+            ],
+            "references": [
+                {
+                    "type": "internal",
+                    "url": "/Typescriptinreact.html",
+                    "label": "Implementing typescript in react, the hows and whys"
+                },
+                {
+                    "type": "external",
+                    "url": "https://react.dev/learn/typescript",
+                    "label": "Documentation from react"
+                }
+            ]
         }
     ]
 }
